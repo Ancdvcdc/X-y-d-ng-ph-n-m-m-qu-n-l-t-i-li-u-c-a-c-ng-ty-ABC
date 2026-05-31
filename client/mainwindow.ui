@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1447</width>
+    <height>879</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #e9eff7;
+}
+QWidget#leftPanel {
+    background-color: #12263b;
+}
+QLabel#appTitle, QLabel#usernameLabel {
+    color: white;
+    font-weight: 600;
+}
+QLineEdit {
+    background-color: white;
+    border: 1px solid #d6dbe8;
+    border-radius: 8px;
+    padding: 8px;
+}
+QPushButton {
+    background-color: #1f76d2;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 14px;
+}
+QPushButton:hover {
+    background-color: #1660b1;
+}
+QTableWidget {
+    background-color: white;
+    gridline-color: #d6dbe8;
+    alternate-background-color: #f6f8fc;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="leftPanel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>170</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <widget class="QLabel" name="menuTitle">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>130</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #ffffff; font-size: 14px; font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>QUẢN LÝ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="homeButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>150</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; color: white; text-align: left; padding-left: 12px; border: none;</string>
+     </property>
+     <property name="text">
+      <string>Trang chủ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="docsButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>114</y>
+       <width>150</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; color: white; text-align: left; padding-left: 12px; border: none;</string>
+     </property>
+     <property name="text">
+      <string>Tài liệu</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="historyButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>158</y>
+       <width>150</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; color: white; text-align: left; padding-left: 12px; border: none;</string>
+     </property>
+     <property name="text">
+      <string>Lịch sử</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="manageButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>202</y>
+       <width>150</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: transparent; color: white; text-align: left; padding-left: 12px; border: none;</string>
+     </property>
+     <property name="text">
+      <string>Quản lý</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="appTitle">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>18</y>
+      <width>400</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>QUẢN LÝ TÀI LIỆU</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="usernameLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>440</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Xin chào,</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pageTitleLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>82</y>
+      <width>400</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size: 18px; font-weight: bold; color: #1f3f67;</string>
+    </property>
+    <property name="text">
+     <string>Trang chủ</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchInput">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>110</y>
+      <width>390</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Tìm kiếm tài liệu...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addUserButton">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>110</y>
+      <width>120</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thêm tài khoản</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="uploadButton">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>110</y>
+      <width>180</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tải Lên Tài Liệu</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="homeContentLabel">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>600</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white; border: 1px solid #d6dbe8; border-radius: 12px; padding: 16px; color: #34495e; font-size: 14px;</string>
+    </property>
+    <property name="text">
+     <string>Chào mừng đến Trang quản trị. Chọn Tài liệu để xem danh sách hoặc chức năng khác ở menu bên trái.</string>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>140</y>
+      <width>791</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Tên tài liệu</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Người tải lên</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Ngày tải lên</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Hành động</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1447</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

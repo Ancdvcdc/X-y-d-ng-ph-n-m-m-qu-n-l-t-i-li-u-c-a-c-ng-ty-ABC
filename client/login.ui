@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>861</width>
+    <height>309</height>
+   </rect>
+  </property>
+  <property name="tabletTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    border-image: url("C:/Users/nam84/Downloads/09b7ae77-6472-4165-a58c-d761eebf147f.jpg") 0 0 0 0 stretch stretch;
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+}
+QGraphicsView {
+    background: transparent;
+    border: none;
+}
+QPushButton {
+    background-color: #0078D7;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+}
+QLineEdit {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: 4px;
+}
+</string>
+  </property>
+  <widget class="QLineEdit" name="usernameInput">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>130</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+    background-color: #ffffff;          /* nền trắng */
+    border: 2px solid #0078D7;          /* viền xanh dương */
+    border-radius: 8px;                 /* bo góc mềm mại */
+    padding: 6px 10px;                  /* khoảng cách trong */
+    font-size: 14px;                    /* cỡ chữ */
+    color: #333333;                     /* màu chữ */
+}
+
+QLineEdit:focus {
+    border: 2px solid #005a9e;          /* đổi màu viền khi focus */
+    background-color: #f0f8ff;          /* nền nhạt khi focus */
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>Tên đăng nhập</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwordInput">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>180</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#passwordInput {
+    background-color: #ffffff;
+    border: 2px solid #ff6f61;          /* viền đỏ cam cho mật khẩu */
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #333333;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Mật khẩu</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>240</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #0078D7;      /* màu xanh dương nổi bật */
+    color: white;                   /* chữ trắng */
+    border-radius: 8px;             /* bo góc mềm mại */
+    padding: 8px 16px;              /* khoảng cách trong */
+    font-size: 14px;                /* cỡ chữ */
+    font-weight: bold;              /* chữ đậm */
+}
+
+QPushButton:hover {
+    background-color: #005a9e;      /* đổi màu khi hover */
+}
+
+QPushButton:pressed {
+    background-color: #004377;      /* màu khi nhấn */
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Đăng Nhập</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>290</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quên mật khẩu?</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>861</width>
+     <height>309</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1024</width>
+     <height>309</height>
+    </size>
+   </property>
+  </widget>
+  <zorder>graphicsView</zorder>
+  <zorder>usernameInput</zorder>
+  <zorder>passwordInput</zorder>
+  <zorder>loginButton</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
